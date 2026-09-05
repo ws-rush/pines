@@ -6,8 +6,9 @@ This is the main repo for the Open Source <a href="https://devdojo.com/pines" ta
 
 1. Download the contents of the GitHub repo and store it in a folder.
 2. Make sure you have <a href="https://nodejs.org/" target="_blank">NodeJS</a> installed along with the <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> package.
-3. CD into your folder and run `http-serve` 
-4. Visit the localhost URL to see PinesUI
+3. CD into your folder and run `npm install` and `npm run build:css`.
+4. Run `http-server`.
+5. Visit the localhost URL to see PinesUI
 
 Be sure to visit <a href="https://devdojo.com/questions" target="_blank">DevDojo discussions</a> section to ask questions and get assistance.
 

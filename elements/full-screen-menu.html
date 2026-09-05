@@ -2,7 +2,7 @@
     <button @click="previewFullScreenMenu=true" class="inline-flex justify-center items-center px-4 py-2 h-10 text-sm font-medium bg-white rounded-md border transition-colors hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none">Preview</button>
     <template x-teleport="body">
 
-        <div x-show="previewFullScreenMenu"  class="fixed inset-0 z-[99] w-screen h-screen">
+        <div x-show="previewFullScreenMenu"  class="fixed inset-0 z-99 w-screen h-screen">
             <!-- Blur Overlay -->
             <div class="fixed inset-0 z-10 w-screen h-screen backdrop-blur-sm bg-white/70"></div>
             <button @click="previewFullScreenMenu=false" class="inline-flex fixed top-0 right-0 z-30 justify-center items-center px-4 py-2 mt-3 mr-3 h-10 text-xs font-medium bg-white rounded-md border transition-colors hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none">Close Fullscreen Menu</button>

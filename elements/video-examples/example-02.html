@@ -194,7 +194,7 @@
             x-transition:leave="transition ease-in duration-300"
             x-transition:leave-start="translate-y-0"
             x-transition:leave-end="translate-y-full"
-            class="absolute bottom-0 left-0 z-20 w-full h-1/2 bg-gradient-to-b from-transparent to-black opacity-20" x-cloak>
+            class="absolute bottom-0 left-0 z-20 w-full h-1/2 bg-linear-to-b from-transparent to-black opacity-20" x-cloak>
         </div>
         <div x-show="controls"
             @click="resetControlsTimeout"
@@ -228,7 +228,7 @@
                         ">
                     </div>
                 </li>
-                <li x-show="showTime" class="flex-shrink-0 mx-2.5 font-mono text-xs opacity-80 hover:opacity-100">
+                <li x-show="showTime" class="shrink-0 mx-2.5 font-mono text-xs opacity-80 hover:opacity-100">
                     <time x-ref="timeElapsed" x-text="timeElapsedString">00:00</time>
                     <span> / </span>
                     <time x-ref="timeDuration" x-text="timeDurationString">00:00</time>
@@ -248,7 +248,7 @@
                                 [&::-moz-range-thumb]:bg-white [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:w-2 [&::-moz-range-thumb]:h-2 [&::-moz-range-thumb]:appearance-none
                                 [&::-ms-thumb]:bg-white [&::-ms-thumb]:rounded-full [&::-ms-thumb]:border-0 [&::-ms-thumb]:w-2 [&::-ms-thumb]:h-2 [&::-ms-thumb]:appearance-none
                                 [&::-webkit-slider-runnable-track]:bg-white/30 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:overflow-hidden [&::-moz-range-track]:bg-neutral-200 [&::-moz-range-track]:rounded-full [&::-ms-track]:bg-neutral-200 [&::-ms-track]:rounded-full
-                                [&::-moz-range-progress]:bg-white/80 [&::-moz-range-progress]:rounded-full [&::-ms-fill-lower]:bg-white/80 [&::-ms-fill-lower]:rounded-full [&::-webkit-slider-thumb]:shadow-[-995px_0px_0px_990px_rgba(255,_255,_255,_0.8)]
+                                [&::-moz-range-progress]:bg-white/80 [&::-moz-range-progress]:rounded-full [&::-ms-fill-lower]:bg-white/80 [&::-ms-fill-lower]:rounded-full [&::-webkit-slider-thumb]:shadow-[-995px_0px_0px_990px_rgba(255,255,255,0.8)]
                         ">
                     </div>
                 </li>

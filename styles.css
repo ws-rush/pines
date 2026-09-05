@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Preserve Tailwind v3's default border color for unqualified border utilities. */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+@source "./index.html";
+@source "./main.js";
+@source "./data.json";
+@source "./getting-started";
+@source "./elements";

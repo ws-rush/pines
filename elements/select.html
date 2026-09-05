@@ -184,7 +184,7 @@
                 :data-disabled="item.disabled"
                 :class="{ 'bg-neutral-100 text-gray-900' : selectableItemIsActive(item), '' : !selectableItemIsActive(item) }"
                 @mousemove="selectableItemActive=item"
-                class="relative flex items-center h-full py-2 pl-8 text-gray-700 cursor-default select-none data-[disabled]:opacity-50 data-[disabled]:pointer-events-none">
+                class="relative flex items-center h-full py-2 pl-8 text-gray-700 cursor-default select-none data-disabled:opacity-50 data-disabled:pointer-events-none">
                 <svg x-show="selectedItem.value==item.value" class="absolute left-0 w-4 h-4 ml-2 stroke-current text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span class="block font-medium truncate" x-text="item.title"></span>
             </li>
